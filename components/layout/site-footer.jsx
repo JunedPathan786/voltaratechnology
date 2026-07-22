@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { m } from 'framer-motion';
-import { CircuitBoard, MessageCircle } from 'lucide-react';
+import { MessageCircle } from 'lucide-react';
 import { defaultViewport, fadeInUp, footerEntrance, staggerContainerFast } from '@/lib/animations';
 import { footerNavGroups } from '@/data/navigation.data';
 import { SITE } from '@/constants/site';
@@ -12,8 +12,8 @@ export function SiteFooter() {
         <m.div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4" variants={staggerContainerFast} initial="hidden" whileInView="visible" viewport={defaultViewport}>
           <m.div className="space-y-4" variants={fadeInUp}>
             <Link href="/" className="flex items-center gap-2">
-              <span className="flex size-8 items-center justify-center rounded-md bg-primary text-primary-foreground">
-                <CircuitBoard className="size-5" />
+              <span className="flex  size-8 items-center justify-center bg-primary text-primary-foreground rounded">
+                <img src="images/logo.png" alt="Logo" className="h-full w-full rounded" />
               </span>
               <span className="text-lg font-semibold tracking-tight">{SITE.shortName}</span>
             </Link>
