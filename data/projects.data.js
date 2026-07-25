@@ -40,7 +40,7 @@ export const allProjects = [
     industry: 'Industrial Automation',
     description:
       'Control electronics and interface design for machine automation and industrial monitoring.',
-    image: '/images/project-automotive.png',
+    image: '/images/project-automation.png',
     tags: ['PLC', 'SCADA', 'Control'],
   },
   {

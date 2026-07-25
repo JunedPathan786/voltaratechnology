@@ -49,40 +49,40 @@
 }
 
 :root {
-  color-scheme: dark;
-  /* near-black background, off-white foreground, single blue accent (from logo) */
-  --background: oklch(0.16 0.006 250);
-  --foreground: oklch(0.93 0.004 250);
-  --card: oklch(0.19 0.007 250);
-  --card-foreground: oklch(0.93 0.004 250);
-  --popover: oklch(0.19 0.007 250);
-  --popover-foreground: oklch(0.93 0.004 250);
-  --primary: oklch(0.72 0.15 227);
-  --primary-foreground: oklch(0.16 0.006 250);
-  --secondary: oklch(0.24 0.008 250);
-  --secondary-foreground: oklch(0.93 0.004 250);
-  --muted: oklch(0.24 0.008 250);
-  --muted-foreground: oklch(0.66 0.008 250);
-  --accent: oklch(0.72 0.15 227);
-  --accent-foreground: oklch(0.16 0.006 250);
-  --destructive: oklch(0.6 0.22 25);
-  --border: oklch(1 0 0 / 9%);
-  --input: oklch(1 0 0 / 12%);
-  --ring: oklch(0.72 0.15 227);
-  --chart-1: oklch(0.72 0.15 227);
-  --chart-2: oklch(0.62 0.12 227);
-  --chart-3: oklch(0.66 0.008 250);
-  --chart-4: oklch(0.5 0.008 250);
-  --chart-5: oklch(0.38 0.008 250);
+  color-scheme: light;
+  /* blueprint theme: pale blue-white surfaces, brand blue as accent + linework, deep navy ink */
+  --background: oklch(0.98 0.008 240);
+  --foreground: oklch(0.2 0.03 250);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.2 0.03 250);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.2 0.03 250);
+  --primary: oklch(0.52 0.16 227);
+  --primary-foreground: oklch(0.99 0.004 240);
+  --secondary: oklch(0.95 0.02 235);
+  --secondary-foreground: oklch(0.22 0.03 250);
+  --muted: oklch(0.96 0.015 235);
+  --muted-foreground: oklch(0.44 0.02 245);
+  --accent: oklch(0.9 0.05 227);
+  --accent-foreground: oklch(0.3 0.1 227);
+  --destructive: oklch(0.55 0.22 25);
+  --border: oklch(0.3 0.06 235 / 12%);
+  --input: oklch(0.3 0.06 235 / 16%);
+  --ring: oklch(0.52 0.16 227);
+  --chart-1: oklch(0.52 0.16 227);
+  --chart-2: oklch(0.65 0.12 227);
+  --chart-3: oklch(0.44 0.02 245);
+  --chart-4: oklch(0.6 0.03 245);
+  --chart-5: oklch(0.75 0.02 245);
   --radius: 0.5rem;
-  --sidebar: oklch(0.19 0.007 250);
-  --sidebar-foreground: oklch(0.93 0.004 250);
-  --sidebar-primary: oklch(0.72 0.15 227);
-  --sidebar-primary-foreground: oklch(0.16 0.006 250);
-  --sidebar-accent: oklch(0.24 0.008 250);
-  --sidebar-accent-foreground: oklch(0.93 0.004 250);
-  --sidebar-border: oklch(1 0 0 / 9%);
-  --sidebar-ring: oklch(0.72 0.15 227);
+  --sidebar: oklch(1 0 0);
+  --sidebar-foreground: oklch(0.2 0.03 250);
+  --sidebar-primary: oklch(0.52 0.16 227);
+  --sidebar-primary-foreground: oklch(0.99 0.004 240);
+  --sidebar-accent: oklch(0.95 0.02 235);
+  --sidebar-accent-foreground: oklch(0.22 0.03 250);
+  --sidebar-border: oklch(0.3 0.06 235 / 12%);
+  --sidebar-ring: oklch(0.52 0.16 227);
 }
 
 @layer base {
@@ -94,17 +94,22 @@
   }
 }
 
-/* Technical grid background */
+/* Technical grid background — recolored as blueprint linework (brand blue on pale surface) */
 .grid-bg {
   background-image:
-    linear-gradient(to right, oklch(1 0 0 / 4%) 1px, transparent 1px),
-    linear-gradient(to bottom, oklch(1 0 0 / 4%) 1px, transparent 1px);
+    linear-gradient(to right, oklch(0.52 0.16 227 / 10%) 1px, transparent 1px),
+    linear-gradient(to bottom, oklch(0.52 0.16 227 / 10%) 1px, transparent 1px);
   background-size: 64px 64px;
 }
 
 .grid-bg-fade {
   -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, black 40%, transparent 100%);
   mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, black 40%, transparent 100%);
+}
+
+/* Optional: soft blue-into-white wash for hero/section backgrounds, layers under .grid-bg */
+.blueprint-wash {
+  background: radial-gradient(ellipse 70% 55% at 50% 0%, oklch(0.72 0.12 227 / 16%), transparent 70%), var(--background);
 }
 
 @keyframes marquee {
