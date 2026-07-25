@@ -102,13 +102,12 @@ export default function HomePage() {
       </AnimatedSection>
 
       {/* Featured projects */}
-      <AnimatedSection animation="slideUpScale" className="border-t border-border py-20 sm:py-28 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/images/Featured%20work.png')] bg-cover bg-center bg-no-repeat opacity-30" aria-hidden="true" />
+      <AnimatedSection animation="fadeRight" className="border-t border-border py-20 sm:py-28 relative overflow-hidden">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
-          <SectionHeading eyebrow="Featured work" title="Engineering with measurable impact" description="A selection of recent hardware, firmware, and IoT projects delivered into production." direction="left" />
+          <SectionHeading eyebrow="Featured work" title="Engineering with measurable impact" description="A selection of recent hardware, firmware, and IoT projects delivered into production." direction="right" />
           <div className="mt-12">
             <ProjectsGrid projects={featuredProjects} />
-          </div>
+          </div>  
         </div>
       </AnimatedSection>
 

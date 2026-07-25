@@ -15,25 +15,25 @@ export const featuredProjects = [
     image: '/images/project-iot.png',
     tags: ['ESP32', 'MQTT', 'Dashboard'],
   },
-  {
-    title: 'BMS Solution',
-    industry: 'EV',
+ {
+    title: 'PLC and HMI',
+    industry: 'Automation',
     description:
-      'Battery management electronics and monitoring firmware for safe and efficient energy storage systems.',
-    image: '/images/project-energy.png',
-    tags: ['BMS', 'EV', 'Embedded'],
+      "Automated control solution with PLC-based I/O, panel wiring and real-time status monitoring.",
+    image: '/images/project-plc-hmi.png',
+    tags: ['PLC', 'HMI', 'Automation'],
   },
 ];
 
 export const allProjects = [
   ...featuredProjects,
   {
-    title: 'RFID Attendance System',
+    title: 'PLC and HMI',
     industry: 'Automation',
     description:
-      'Attendance and access tracking hardware with embedded logic and practical deployment support.',
-    image: '/images/project-automation.png',
-    tags: ['RFID', 'Embedded', 'Automation'],
+      "Automated control solution with PLC-based I/O, panel wiring and real-time status monitoring.",
+    image: '/images/project-plc-hmi.png',
+    tags: ['PLC', 'HMI', 'Automation'],
   },
   {
     title: 'Industrial Automation Controller',
