@@ -18,7 +18,6 @@ export function ProjectsGrid({
             <MotionImageWrap className="absolute inset-0">
               <Image src={imgSrc} alt={project.title} fill sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" className="object-cover" />
             </MotionImageWrap>
-            <div className="absolute inset-0 bg-gradient-to-t from-card via-card/10 to-transparent" />
             <span className="absolute left-4 top-4 rounded-full border border-border bg-background/80 px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-primary backdrop-blur">
               {project.industry}
             </span>

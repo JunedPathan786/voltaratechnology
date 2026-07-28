@@ -76,7 +76,6 @@ export function Hero() {
           willChange: 'transform'
         }}>
             <Image src={`${basePath}/images/hero-pcb.png`} alt="Custom PCB with an ESP32 microcontroller module and gold traces" fill priority sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-tr from-background/40 via-transparent to-transparent" />
           </m.div>
           <m.div className="absolute -bottom-4 -left-4 hidden rounded-xl border border-border bg-card/90 px-4 py-3 backdrop-blur sm:block" animate={floatSlowAnimation} style={{
           willChange: 'transform'
