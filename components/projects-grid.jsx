@@ -1,14 +1,22 @@
 import Image from 'next/image';
 import { ArrowUpRight } from 'lucide-react';
 import { MotionCard, MotionImageWrap, StaggerGrid } from '@/components/motion/motion-wrappers';
+import { basePath } from '@/lib/utils';
 export function ProjectsGrid({
   projects
 }) {
   return <StaggerGrid className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-      {projects.map(project => <MotionCard key={project.title} className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition-colors hover:border-primary/40 hover:shadow-[0_16px_48px_-12px_oklch(0_0_0_/_0.55)]">
+      {projects.map(project => {
+        const imgSrc = project.image
+          ? (project.image.startsWith('http') || (basePath && project.image.startsWith(basePath))
+              ? project.image
+              : `${basePath}${project.image}`)
+          : `${basePath}/placeholder.svg`;
+
+        return <MotionCard key={project.title} className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition-colors hover:border-primary/40 hover:shadow-[0_16px_48px_-12px_oklch(0_0_0_/_0.55)]">
           <div className="relative aspect-[4/3] overflow-hidden">
             <MotionImageWrap className="absolute inset-0">
-              <Image src={project.image || '/placeholder.svg'} alt={project.title} fill sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" className="object-cover" />
+              <Image src={imgSrc} alt={project.title} fill sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" className="object-cover" />
             </MotionImageWrap>
             <div className="absolute inset-0 bg-gradient-to-t from-card via-card/10 to-transparent" />
             <span className="absolute left-4 top-4 rounded-full border border-border bg-background/80 px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-primary backdrop-blur">
@@ -29,6 +37,7 @@ export function ProjectsGrid({
                 </span>)}
             </div>
           </div>
-        </MotionCard>)}
+        </MotionCard>;
+      })}
     </StaggerGrid>;
 }

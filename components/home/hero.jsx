@@ -6,6 +6,7 @@ import { m } from 'framer-motion';
 import { ArrowRight, Cpu } from 'lucide-react';
 import { floatAnimation, floatSlowAnimation, glowPulse, heroBadge, heroCta, heroHeadingWord, heroStatItem, heroStats, heroSubheading, staggerContainer } from '@/lib/animations';
 import { Button } from '@/components/ui/button';
+import { basePath } from '@/lib/utils';
 const headingWords = 'Your Trusted Embedded & IoT Development Partner'.split(' ');
 export function Hero() {
   return <section className="relative overflow-hidden border-b border-border">
@@ -74,7 +75,7 @@ export function Hero() {
           <m.div className="relative aspect-square overflow-hidden rounded-2xl border border-border" animate={floatAnimation} style={{
           willChange: 'transform'
         }}>
-            <Image src="/images/hero-pcb.png" alt="Custom PCB with an ESP32 microcontroller module and gold traces" fill priority sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+            <Image src={`${basePath}/images/hero-pcb.png`} alt="Custom PCB with an ESP32 microcontroller module and gold traces" fill priority sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
             <div className="absolute inset-0 bg-gradient-to-tr from-background/40 via-transparent to-transparent" />
           </m.div>
           <m.div className="absolute -bottom-4 -left-4 hidden rounded-xl border border-border bg-card/90 px-4 py-3 backdrop-blur sm:block" animate={floatSlowAnimation} style={{

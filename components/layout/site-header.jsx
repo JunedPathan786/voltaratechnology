@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 import { AnimatePresence, m, useMotionValueEvent, useScroll } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { mobileMenu, mobileMenuItem } from '@/lib/animations';
-import { cn } from '@/lib/utils';
+import { basePath, cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { mainNav } from '@/data/navigation.data';
 export function SiteHeader() {
@@ -51,7 +51,7 @@ export function SiteHeader() {
   }}>
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
-          <img src="/images/logo.png" alt="Voltara Technologies" className="size-14 object-contain rounded-xl" style={{
+          <img src={`${basePath}/images/logo.png`} alt="Voltara Technologies" className="size-14 object-contain rounded-xl" style={{
           // filter: 'brightness(0) saturate(100%) invert(24%) sepia(62%) saturate(2285%) hue-rotate(6deg) brightness(99%) contrast(96%)'
         }} />
           <span className="text-lg font-semibold tracking-tight">VOLTARA</span>

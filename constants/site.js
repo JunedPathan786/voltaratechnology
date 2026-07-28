@@ -1,3 +1,5 @@
+import { basePath } from '@/lib/utils';
+
 export const SITE = {
   name: 'VOLTARA TECHNOLOGIES',
   shortName: 'VOLTARA',
@@ -7,5 +9,5 @@ export const SITE = {
   email: 'voltaratechnology@gmail.com',
   phone: '+91 9146942904',
   address: 'Pune, Kharadi 411014',
-  logo: '/images/logo.png',
+  logo: `${basePath}/images/logo.png`,
 };
