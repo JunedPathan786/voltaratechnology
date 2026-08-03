@@ -19,9 +19,9 @@ export const contactFaqs = [
   { question: 'Do you work with students and startups?', answer: 'Yes — we support academic projects, startup prototypes and industrial development work.' },
 ];
 
-// Coordinates for the Kharadi, Pune office — used for the embedded map on /contact
-export const officeMap = {
-  address: 'Kharadi, Pune, Maharashtra 411014',
-  embedSrc:
-    'https://maps.google.com/maps?q=Kharadi%2C%20Pune%2C%20Maharashtra%20411014&t=&z=14&ie=UTF8&iwloc=&output=embed',
-};
+// // Coordinates for the Kharadi, Pune office — used for the embedded map on /contact
+// export const officeMap = {
+//   address: 'Kharadi, Pune, Maharashtra 411014',
+//   embedSrc:
+//     'https://maps.google.com/maps?q=Kharadi%2C%20Pune%2C%20Maharashtra%20411014&t=&z=14&ie=UTF8&iwloc=&output=embed',
+// };

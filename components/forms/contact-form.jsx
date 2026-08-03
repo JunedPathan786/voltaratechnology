@@ -116,25 +116,49 @@ export function ContactForm() {
         >
           <div className="grid gap-5 sm:grid-cols-2">
             <m.div variants={fadeInUp}>
-              <Field label="Name">
-                <input required name="name" type="text" placeholder="Ada Lovelace" className={inputClass} />
+              <Field label="Full Name">
+                <input
+                  required
+                  name="name"
+                  type="text"
+                  placeholder="e.g. John Anderson"
+                  className={inputClass}
+                />
               </Field>
             </m.div>
+
             <m.div variants={fadeInUp}>
-              <Field label="Email">
-                <input required name="email" type="email" placeholder="ada@company.com" className={inputClass} />
+              <Field label="Work Email">
+                <input
+                  required
+                  name="email"
+                  type="email"
+                  placeholder="john@company.com"
+                  className={inputClass}
+                />
               </Field>
             </m.div>
+
             <m.div variants={fadeInUp}>
-              <Field label="Company (optional for students)">
-                <input name="company" type="text" placeholder="Acme Robotics" className={inputClass} />
+              <Field label="Company (Optional)">
+                <input
+                  name="company"
+                  type="text"
+                  placeholder="e.g. Acme Technologies"
+                  className={inputClass}
+                />
               </Field>
             </m.div>
+
             <m.div variants={fadeInUp}>
-              <Field label="Project type">
-                <select name="projectType" defaultValue="" className={cn(inputClass, 'appearance-none')}>
+              <Field label="Project Type">
+                <select
+                  name="projectType"
+                  defaultValue=""
+                  className={cn(inputClass, "appearance-none")}
+                >
                   <option value="" disabled>
-                    Select a type
+                    Select project type
                   </option>
                   {projectTypes.map((type) => (
                     <option key={type} value={type}>
@@ -147,13 +171,13 @@ export function ContactForm() {
           </div>
 
           <m.div className="mt-5" variants={fadeInUp}>
-            <Field label="Technical requirements">
+            <Field label="Project Details">
               <textarea
                 required
                 name="requirements"
                 rows={5}
-                placeholder="Tell us about your product, constraints, target volumes, and timeline…"
-                className={cn(inputClass, 'resize-y')}
+                placeholder="Tell me about your project, goals, required features, preferred tech stack (if any), budget, and expected timeline..."
+                className={cn(inputClass, "resize-y")}
               />
             </Field>
           </m.div>
@@ -165,7 +189,7 @@ export function ContactForm() {
               className="mt-0.5 size-4 rounded border-input bg-card accent-primary"
             />
             <span className="text-sm leading-relaxed text-muted-foreground">
-              I&apos;d like to sign a mutual NDA before we discuss technical details.
+              I'd like to sign a mutual NDA before sharing confidential project details.
             </span>
           </m.label>
 
