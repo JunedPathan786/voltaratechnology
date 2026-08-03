@@ -17,7 +17,7 @@ export function CtaSection({
     href: '/projects'
   }
 }) {
-  return <section className="py-20 sm:py-28">
+  return <section className="py-12 sm:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <m.div className="relative overflow-hidden rounded-3xl border border-border bg-card px-6 py-16 text-center sm:px-16" initial="hidden" whileInView="visible" viewport={defaultViewport} variants={scaleIn}>
           <div className="grid-bg grid-bg-fade absolute inset-0" aria-hidden="true" />

@@ -18,7 +18,7 @@ export default function AboutPage() {
   return <main className='overflow-hidden'>
       <PageHeader eyebrow="About" title="Engineering depth with a product mindset" description="We build intelligent hardware and embedded software that helps ambitious teams move from concept to reliable deployment without losing momentum." />
 
-      <AnimatedSection animation="fadeLeft" className="py-20 sm:py-28">
+      <AnimatedSection animation="fadeLeft" className="py-12 sm:py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
             <div>
@@ -64,7 +64,7 @@ export default function AboutPage() {
         </div>
       </AnimatedSection>
 
-      <AnimatedSection animation="fadeRight" className="border-t border-border py-20 sm:py-28">
+      <AnimatedSection animation="fadeRight" className="border-t border-border py-12 sm:py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="Values" title="Built around clarity, rigor, and momentum" description="We focus on practical engineering decisions that make your product easier to build, easier to test, and easier to scale." direction="right" />
           <div className="mt-12">
@@ -73,7 +73,7 @@ export default function AboutPage() {
         </div>
       </AnimatedSection>
 
-      <AnimatedSection animation="slideUpScale" className="border-t border-border py-20 sm:py-28">
+      <AnimatedSection animation="slideUpScale" className="border-t border-border py-12 sm:py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="Approach" title="A path from idea to dependable result" description="Our process is simple: understand the problem, design the system, build it carefully, and support it through launch and iteration." direction="left" />
           <div className="mt-14">
@@ -84,7 +84,7 @@ export default function AboutPage() {
 
       <StatsSection stats={aboutStats} />
 
-      <AnimatedSection animation="blur" className="border-t border-border py-20 sm:py-28">
+      <AnimatedSection animation="blur" className="border-t border-border py-12 sm:py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="rounded-3xl border border-border bg-card p-8 sm:p-10">
             <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">

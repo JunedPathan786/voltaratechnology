@@ -14,7 +14,7 @@ export default function ProjectsPage() {
   return <main className='overflow-hidden'>
       <PageHeader eyebrow="Projects" title="Engineering projects that shipped" description="A portfolio of delivered hardware, firmware, and IoT solutions — the engineering challenge, and the solution we built." />
 
-      <AnimatedSection animation="fadeUp" className="py-20 sm:py-28">
+      <AnimatedSection animation="fadeUp" className="py-12 sm:py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <ProjectsGrid projects={allProjects} />
         </div>

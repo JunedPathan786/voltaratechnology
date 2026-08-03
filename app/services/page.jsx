@@ -19,7 +19,7 @@ export default function ServicesPage() {
   return <main className='overflow-hidden'>
       <PageHeader eyebrow="Services" title="Engineering services, end to end" description="Comprehensive hardware and software capabilities that take your product from first sketch to certified, scalable production." />
 
-      <AnimatedSection animation="fadeLeft" className="py-20 sm:py-28">
+      <AnimatedSection animation="fadeLeft" className="py-12 sm:py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="Capabilities" title="Core offerings" description="Eight disciplines under one roof, so your product never falls between vendors." direction="left" />
           <div className="mt-12">
@@ -28,7 +28,7 @@ export default function ServicesPage() {
         </div>
       </AnimatedSection>
 
-      <AnimatedSection animation="fadeRight" className="border-t border-border py-20 sm:py-28">
+      <AnimatedSection animation="fadeRight" className="border-t border-border py-12 sm:py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="Methodology" title="A rigorous engineering approach" description="Requirements analysis, system architecture, iterative prototyping, validation testing, and production support — applied to every build." direction="right" />
           <div className="mt-14">
@@ -37,7 +37,7 @@ export default function ServicesPage() {
         </div>
       </AnimatedSection>
 
-      <AnimatedSection animation="slideUpScale" className="border-t border-border py-20 sm:py-28">
+      <AnimatedSection animation="slideUpScale" className="border-t border-border py-12 sm:py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="Expertise" title="Specialized technology domains" description="Deep experience across the disciplines that make embedded products hard to get right." direction="left" />
           <div className="mt-12">
@@ -46,7 +46,7 @@ export default function ServicesPage() {
         </div>
       </AnimatedSection>
 
-      <AnimatedSection animation="blur" className="border-t border-border py-20 sm:py-28">
+      <AnimatedSection animation="blur" className="border-t border-border py-12 sm:py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="Engagement models" title="Flexible ways to work together" description="Choose the collaboration model that fits your team, timeline, and budget." direction="right" />
           <div className="mt-14">

@@ -37,7 +37,7 @@ export default function HomePage() {
   return <main className="overflow-hidden">
       <Hero />
 
-      <AnimatedSection animation="fadeLeft" className="border-t border-border py-20 sm:py-28">
+      <AnimatedSection animation="fadeLeft" className="border-t border-border py-12 sm:py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
             <div>
@@ -82,7 +82,7 @@ export default function HomePage() {
       </AnimatedSection>
 
       {/* Services */}
-      <AnimatedSection animation="fadeLeft" className="py-20 sm:py-28">
+      <AnimatedSection animation="fadeLeft" className="py-12 sm:py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="Services" title="Full-stack engineering, from silicon to cloud" description="We cover the entire hardware lifecycle so you can ship dependable products without stitching together a dozen vendors." direction="left" />
           <div className="mt-12">
@@ -92,7 +92,7 @@ export default function HomePage() {
       </AnimatedSection>
 
       {/* Industries */}
-      <AnimatedSection animation="fadeRight" className="border-t border-border py-20 sm:py-28">
+      <AnimatedSection animation="fadeRight" className="border-t border-border py-12 sm:py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="Industries" title="Built for demanding environments" description="Our work runs in factories, vehicles, hospitals, and the grid — places where failure is not an option." direction="right" />
           <div className="mt-12">
@@ -102,7 +102,7 @@ export default function HomePage() {
       </AnimatedSection>
 
       {/* Featured projects */}
-      <AnimatedSection animation="fadeRight" className="border-t border-border py-20 sm:py-28 relative overflow-hidden">
+      <AnimatedSection animation="fadeRight" className="border-t border-border py-12 sm:py-16 relative overflow-hidden">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <SectionHeading eyebrow="Featured work" title="Engineering with measurable impact" description="A selection of recent hardware, firmware, and IoT projects delivered into production." direction="right" />
           <div className="mt-12">
@@ -112,7 +112,7 @@ export default function HomePage() {
       </AnimatedSection>
 
       {/* Timeline */}
-      <AnimatedSection animation="fadeUp" className="border-t border-border py-20 sm:py-28">
+      <AnimatedSection animation="fadeUp" className="border-t border-border py-12 sm:py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="Process" title="A disciplined path to production" description="Every project follows a transparent, milestone-driven workflow — no surprises, no black boxes." direction="right" />
           <div className="mt-14">
@@ -132,7 +132,7 @@ export default function HomePage() {
       </AnimatedSection>
 
       {/* Testimonials */}
-      <AnimatedSection animation="blur" className="border-t border-border py-20 sm:py-28">
+      <AnimatedSection animation="blur" className="border-t border-border py-12 sm:py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="Testimonials" title="Trusted by the people who ship" description="Engineering leaders, CTOs, and research partners on what it's like to build with us." align="center" className="mb-14" />
           <Testimonials items={testimonials} />
@@ -140,7 +140,7 @@ export default function HomePage() {
       </AnimatedSection>
 
       {/* Quality / trust */}
-      <AnimatedSection animation="fadeRight" className="border-t border-border py-20 sm:py-28">
+      <AnimatedSection animation="fadeRight" className="border-t border-border py-12 sm:py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="Quality assurance" title="Engineering excellence, certified" description="Rigorous processes and independent certifications back every board we ship." direction="left" />
           <div className="mt-12">

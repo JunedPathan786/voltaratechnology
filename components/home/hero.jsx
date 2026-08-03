@@ -14,38 +14,38 @@ export function Hero() {
       <m.div className="pointer-events-none absolute inset-x-0 top-0 h-[420px] opacity-60" style={{
       background: 'radial-gradient(400px circle at 70% 20%, oklch(0.72 0.15 227 / 0.18), transparent 70%)'
     }} aria-hidden="true" animate={glowPulse} />
-      <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-4 pb-20 pt-16 sm:px-6 lg:grid-cols-2 lg:gap-8 lg:px-8 lg:pb-28 lg:pt-24">
-        <m.div className="mt-[-60px] flex flex-col items-start gap-6" initial="hidden" animate="visible" variants={staggerContainer(0.05, 0)}>
-          <m.span className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1.5 font-mono text-xs uppercase tracking-widest text-primary" variants={heroBadge}>
+      <div className="relative mx-auto grid max-w-7xl items-center gap-7 px-4 pb-12 pt-10 sm:px-6 lg:grid-cols-2 lg:gap-8 lg:px-8 lg:pb-20 lg:pt-16">
+        <m.div className="mt-0 flex flex-col items-start gap-4 sm:mt-[-60px] sm:gap-6" initial="hidden" animate="visible" variants={staggerContainer(0.05, 0)}>
+          <m.span className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-2.5 py-1.5 font-mono text-[10px] uppercase tracking-widest text-primary sm:px-3 sm:text-xs" variants={heroBadge}>
             <Cpu className="size-3.5" />
             Embedded & Hardware Engineering
           </m.span>
 
-          <h1 className="text-balance text-4xl font-semibold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
+          <h1 className="text-balance text-3xl font-semibold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
             {headingWords.map((word, i) => <m.span key={`${word}-${i}`} className="inline-block mr-[0.25em]" custom={i} variants={heroHeadingWord} initial="hidden" animate="visible">
                 {word}
               </m.span>)}
           </h1>
 
-          <m.p className="max-w-xl text-pretty text-lg leading-relaxed text-muted-foreground" variants={heroSubheading} initial="hidden" animate="visible">
+          <m.p className="max-w-xl text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg" variants={heroSubheading} initial="hidden" animate="visible">
             We design embedded hardware, firmware, automation systems, IoT solutions,
             web dashboards and academic/industrial projects using STM32, ESP32, PIC,
             SCADA, E-PLAIN, HMI, Arduino and modern communication protocols.
           </m.p>
 
-          <div className="flex flex-col gap-3 sm:flex-row">
+          <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
             <m.div custom={0} variants={heroCta} initial="hidden" animate="visible">
-              <Button size="lg" nativeButton={false} className="h-11 px-6 [&_svg]:size-4" render={<Link href="/contact">
+              <Button size="lg" nativeButton={false} className="h-11 w-full px-6 sm:w-auto [&_svg]:size-4" render={<Link href="/contact">
                     Start a project
                     <ArrowRight />
                   </Link>} />
             </m.div>
             <m.div custom={1} variants={heroCta} initial="hidden" animate="visible">
-              <Button size="lg" variant="outline" nativeButton={false} className="h-11 px-6" render={<Link href="/services">Explore services</Link>} />
+              <Button size="lg" variant="outline" nativeButton={false} className="h-11 w-full px-6 sm:w-auto" render={<Link href="/services">Explore services</Link>} />
             </m.div>
           </div>
 
-          <m.dl className="mt-4 flex flex-wrap gap-x-10 gap-y-4 font-mono text-xs uppercase tracking-widest text-muted-foreground" variants={heroStats} initial="hidden" animate="visible">
+          <m.dl className="mt-1 flex flex-wrap gap-x-6 gap-y-3 font-mono text-[10px] uppercase tracking-widest text-muted-foreground sm:mt-4 sm:gap-x-10 sm:text-xs" variants={heroStats} initial="hidden" animate="visible">
             <m.div variants={heroStatItem}>
               <dt className="text-primary">1+ yrs</dt>
               <dd>In production</dd>

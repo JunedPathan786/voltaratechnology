@@ -20,7 +20,7 @@ export default function ContactPage() {
         description="Whether you're an engineer, founder, or procurement lead, tell us about your project and we'll start a technical conversation."
       />
 
-      <AnimatedSection animation="fadeUp" className="pt-6 sm:pt-8 pb-20 sm:pb-28">
+      <AnimatedSection animation="fadeUp" className="pt-4 sm:pt-6 pb-12 sm:pb-16">
         <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-[3fr_2fr] lg:gap-16 lg:px-8">
           <FadeInView animation="fadeRight" delay={0.1} viewport={{ once: true, amount: 0.02 }}>
             <ContactForm />

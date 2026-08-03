@@ -12,7 +12,7 @@ export function FaqSection({
   items
 }) {
   const [openIndex, setOpenIndex] = useState(0);
-  return <m.section className="border-t border-border py-20 sm:py-28" initial="hidden" whileInView="visible" viewport={defaultViewport} variants={fadeInUp}>
+  return <m.section className="border-t border-border py-12 sm:py-16" initial="hidden" whileInView="visible" viewport={defaultViewport} variants={fadeInUp}>
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         <SectionHeading eyebrow={eyebrow} title={title} description={description} align="center" direction="up" />
         <m.div className="mt-12 divide-y divide-border rounded-xl border border-border bg-card" variants={staggerContainerFast} initial="hidden" whileInView="visible" viewport={defaultViewport}>
