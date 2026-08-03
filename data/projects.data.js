@@ -14,15 +14,7 @@ export const featuredProjects = [
       'Connected monitoring solution with sensor acquisition, MQTT communication and dashboard visibility.',
     image: '/images/project-iot.png',
     tags: ['ESP32', 'MQTT', 'Dashboard'],
-  },
- {
-    title: 'PLC and HMI',
-    industry: 'Automation',
-    description:
-      "Automated control solution with PLC-based I/O, panel wiring and real-time status monitoring.",
-    image: '/images/project-plc-hmi.png',
-    tags: ['PLC', 'HMI', 'Automation'],
-  },
+  }
 ];
 
 export const allProjects = [
