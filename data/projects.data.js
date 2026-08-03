@@ -1,5 +1,13 @@
 export const featuredProjects = [
   {
+    title: 'PLC and HMI',
+    industry: 'Automation',
+    description:
+      "Automated control solution with PLC-based I/O, panel wiring and real-time status monitoring.",
+    image: '/images/project-plc-hmi.png',
+    tags: ['PLC', 'HMI', 'Automation'],
+  },
+  {
     title: 'Robotics Platform',
     industry: 'Robotics',
     description:
@@ -19,14 +27,6 @@ export const featuredProjects = [
 
 export const allProjects = [
   ...featuredProjects,
-  {
-    title: 'PLC and HMI',
-    industry: 'Automation',
-    description:
-      "Automated control solution with PLC-based I/O, panel wiring and real-time status monitoring.",
-    image: '/images/project-plc-hmi.png',
-    tags: ['PLC', 'HMI', 'Automation'],
-  },
   {
     title: 'Industrial Automation Controller',
     industry: 'Industrial Automation',
