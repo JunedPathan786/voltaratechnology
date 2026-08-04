@@ -6,7 +6,7 @@ import { MessageCircle } from 'lucide-react';
 import { defaultViewport, fadeInUp, footerEntrance, staggerContainerFast } from '@/lib/animations';
 import { footerNavGroups } from '@/data/navigation.data';
 import { SITE } from '@/constants/site';
-import { basePath } from '@/lib/utils';
+
 export function SiteFooter() {
   return <m.footer className="border-t border-border bg-card" initial="hidden" whileInView="visible" viewport={defaultViewport} variants={footerEntrance}>
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
@@ -14,7 +14,7 @@ export function SiteFooter() {
           <m.div className="space-y-4" variants={fadeInUp}>
             <Link href="/" className="flex items-center gap-2">
               <span className="flex  size-8 items-center justify-center bg-primary text-primary-foreground rounded">
-                <img src={`${basePath}/images/logo.png`} alt="Logo" className="h-full w-full rounded" />
+                <img src="/images/logo.png" alt="Logo" className="h-full w-full rounded" />
               </span>
               <span className="text-lg font-semibold tracking-tight">{SITE.shortName}</span>
             </Link>

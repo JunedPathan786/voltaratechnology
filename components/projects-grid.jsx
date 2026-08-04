@@ -1,17 +1,19 @@
 import Image from 'next/image';
 import { ArrowUpRight } from 'lucide-react';
 import { MotionCard, MotionImageWrap, StaggerGrid } from '@/components/motion/motion-wrappers';
-import { basePath } from '@/lib/utils';
+
 export function ProjectsGrid({
   projects
 }) {
   return <StaggerGrid className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
       {projects.map(project => {
         const imgSrc = project.image
-          ? (project.image.startsWith('http') || (basePath && project.image.startsWith(basePath))
+          ? (project.image.startsWith('http')
               ? project.image
-              : `${basePath}${project.image}`)
-          : `${basePath}/placeholder.svg`;
+              : project.image.startsWith('/')
+                ? project.image
+                : `/${project.image}`)
+          : '/images/logo.png';
 
         return <MotionCard key={project.title} className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition-colors hover:border-primary/40 hover:shadow-[0_16px_48px_-12px_oklch(0_0_0_/_0.55)]">
           <div className="relative aspect-[4/3] overflow-hidden">
