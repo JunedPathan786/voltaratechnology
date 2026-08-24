@@ -19,8 +19,8 @@ const plexMono = IBM_Plex_Mono({
 });
 export const metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://voltaratechnologies.com'),
-  title: 'VOLTARA TECHNOLOGIES — Embedded, IoT & Automation Engineering',
-  description: 'VOLTARA TECHNOLOGIES designs embedded systems, IoT solutions, automation platforms, robotics, and custom electronics for students, startups, and industrial clients.',
+  title: 'Voltara Technologies | Embedded Systems, IoT & Automation Company',
+  description: 'Voltara Technologies provides embedded systems, IoT, PCB design, industrial automation, robotics and custom electronics solutions for startups, students and industrial teams.',
   generator: 'v0.app',
   icons: {
     icon: '/images/logo.png'
