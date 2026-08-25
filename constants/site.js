@@ -1,5 +1,5 @@
 export const SITE = {
-  name: 'VOLTARA TECHNOLOGIES',
+  name: 'Voltara Technologies',
   shortName: 'VOLTARA',
   tagline: 'Embedded, IoT & Automation Engineering',
   description:
