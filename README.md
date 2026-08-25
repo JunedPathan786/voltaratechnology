@@ -87,7 +87,7 @@ environment variables.
 **Contact page**
 - Added a real working inquiry form (`components/forms/contact-form.jsx`) —
   previously the page had no way to actually submit a message.
-- Added an embedded Google Map for the Kharadi, Pune office
+- Added an embedded Google Map for the Maharashtra , Pune office
   (`components/shared/office-map.jsx`), no API key required.
 - The submit posts to `/api/contact`, which validates the payload and sends
   the email via Resend (already a dependency) when `RESEND_API_KEY` is set —
