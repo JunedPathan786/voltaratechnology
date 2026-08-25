@@ -12,7 +12,7 @@ const CtaSection = dynamic(() => import('@/components/shared/cta-section').then(
 const Timeline = dynamic(() => import('@/components/timeline').then((m) => m.Timeline), { loading: () => <SectionSkeleton /> });
 export const metadata = {
   title: 'About Voltara Technologies',
-  description: 'VOLTARA TECHNOLOGIES builds embedded systems, IoT products, automation platforms and robotics solutions for students, startups and industrial teams.'
+  description: 'Voltara Technologies builds embedded systems, IoT products, automation platforms and robotics solutions for students, startups and industrial teams.'
 };
 export default function AboutPage() {
   return <main className='overflow-hidden'>

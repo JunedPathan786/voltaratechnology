@@ -7,7 +7,7 @@ const ProjectsGrid = dynamic(() => import('@/components/projects-grid').then((m)
 const FaqSection = dynamic(() => import('@/components/faq-section').then((m) => m.FaqSection), { loading: () => <SectionSkeleton /> });
 const CtaSection = dynamic(() => import('@/components/shared/cta-section').then((m) => m.CtaSection), { loading: () => <SectionSkeleton /> });
 export const metadata = {
-  title: 'Engineering Projects — VOLTARA TECHNOLOGIES',
+  title: 'Engineering Projects — Voltara Technologies',
   description: 'A portfolio of embedded, IoT, automation and robotics solutions delivered for students, startups and industrial teams.'
 };
 export default function ProjectsPage() {

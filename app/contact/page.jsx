@@ -6,9 +6,9 @@ import { FadeInView } from '@/components/motion/fade-in-view';
 import { contactDetails, locations, contactFaqs } from '@/data/contact.data';
 
 export const metadata = {
-  title: 'Contact — VOLTARA TECHNOLOGIES',
+  title: 'Contact — Voltara Technologies',
   description:
-    'Start a technical conversation with VOLTARA TECHNOLOGIES about your embedded, IoT, automation or robotics project.',
+    'Start a technical conversation with Voltara Technologies about your embedded, IoT, automation or robotics project.',
 };
 
 export default function ContactPage() {

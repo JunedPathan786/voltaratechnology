@@ -12,7 +12,7 @@ const LogoMarquee = dynamic(() => import('@/components/shared/logo-marquee').the
 const FaqSection = dynamic(() => import('@/components/faq-section').then((m) => m.FaqSection), { loading: () => <SectionSkeleton /> });
 const CtaSection = dynamic(() => import('@/components/shared/cta-section').then((m) => m.CtaSection), { loading: () => <SectionSkeleton /> });
 export const metadata = {
-  title: 'Engineering Services — VOLTARA TECHNOLOGIES',
+  title: 'Engineering Services — Voltara Technologies',
   description: 'Embedded systems, automation, IoT, PCB design, firmware and industrial control services for students, startups and industry.'
 };
 export default function ServicesPage() {
