@@ -40,6 +40,7 @@ export default function RootLayout({
 }) {
   return <html lang="en" className={`dark bg-background ${spaceGrotesk.variable} ${plexMono.variable}`}>
       <body className="font-sans antialiased">
+        <meta name="google-site-verification" content="ULJH0iEknE-ONZjfPEvb_K-dIlrrjjFok6H0YeRsIeM" />
         <MotionProvider>
           <SiteHeader />
           <SmoothScroll>
