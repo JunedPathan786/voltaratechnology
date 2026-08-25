@@ -22,6 +22,9 @@ export const metadata = {
   title: 'Voltara Technologies | Embedded Systems, IoT & Automation Company',
   description: 'Voltara Technologies provides embedded systems, IoT, PCB design, industrial automation, robotics and custom electronics solutions for startups, students and industrial teams.',
   generator: 'v0.app',
+  verification: {
+    google: 'ULJH0iEknE-ONZjfPEvb_K-dIlrrjjFok6H0YeRsIeM'
+  },
   icons: {
     icon: '/images/logo.png'
   },
@@ -40,7 +43,6 @@ export default function RootLayout({
 }) {
   return <html lang="en" className={`dark bg-background ${spaceGrotesk.variable} ${plexMono.variable}`}>
       <body className="font-sans antialiased">
-        <meta name="google-site-verification" content="ULJH0iEknE-ONZjfPEvb_K-dIlrrjjFok6H0YeRsIeM" />
         <MotionProvider>
           <SiteHeader />
           <SmoothScroll>
